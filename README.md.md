@@ -1,4 +1,4 @@
-# Lahore Bites — Restaurant Website
+# Spice House — Restaurant Website
 
 A modern, responsive restaurant website built as a GrowthLift Digital Internship 2026 capstone project.
 

@@ -1,4 +1,4 @@
-# Project Brief — Lahore Bites Restaurant Website
+# Project Brief — Spice House Restaurant Website
 
 ## One-line description
 A modern, mobile-friendly website for a local restaurant showcasing its menu, story, and location — built to convert visitors into diners.
