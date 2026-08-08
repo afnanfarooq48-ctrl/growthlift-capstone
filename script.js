@@ -1,4 +1,4 @@
-```js
+js
 // =============================
 // Spice House JavaScript
 // =============================
@@ -141,4 +141,4 @@ cards.forEach(card => {
         card.style.transform = "translateY(0)";
     });
 
-}); 
+});
