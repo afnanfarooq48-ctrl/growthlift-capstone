@@ -1,195 +1,364 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact | Spice House</title>
+    <meta charset="UTF-8">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link rel="stylesheet" href="style.css">
+    <title>Contact | Spice House</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
+
 <body>
 
-<header class="site-header">
 
-<div class="container nav-wrap">
+    <!-- HEADER -->
 
-<a href="index.html" class="logo">Spice House</a>
+    <header class="site-header">
 
-<nav class="nav-links">
+        <div class="container nav-wrap">
 
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="about.html">About</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html" class="active">Contact</a>
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Spice House
+            </a>
 
-</nav>
 
-</div>
+            <nav class="nav-links">
 
-</header>
+                <a href="index.html">
+                    Home
+                </a>
 
-<section class="hero">
+                <a href="menu.html">
+                    Menu
+                </a>
 
-<div class="container hero-content">
+                <a href="about.html">
+                    About
+                </a>
 
-<h1>Contact Us</h1>
+                <a href="gallery.html">
+                    Gallery
+                </a>
 
-<p>
-Reserve your table or get in touch with our friendly team.
-</p>
+                <a
+                    href="contact.html"
+                    class="active"
+                >
+                    Contact
+                </a>
 
-</div>
+            </nav>
 
-</section>
+        </div>
 
-<section class="container" style="padding:80px 24px;">
+    </header>
 
-<div class="contact-box">
 
-<div>
 
-<h2>Send Us a Message</h2>
+    <!-- HERO -->
 
-<form>
+    <section class="hero">
 
-<input type="text" placeholder="Your Name" required>
+        <div class="container hero-content">
 
-<input type="email" placeholder="Your Email" required>
+            <h1>
+                Contact Us
+            </h1>
 
-<input type="tel" placeholder="Phone Number">
+            <p>
+                Reserve your table or get in touch
+                with our friendly team.
+            </p>
 
-<input type="text" placeholder="Subject">
+        </div>
 
-<textarea rows="6" placeholder="Write your message..." required></textarea>
+    </section>
 
-<button type="submit" class="btn-cta">
-Send Message
-</button>
 
-</form>
 
-</div>
+    <!-- CONTACT -->
 
-<div>
+    <section
+        class="container"
+        style="padding:80px 24px;"
+    >
 
-<h2>Restaurant Info</h2>
+        <div class="contact-box">
 
-<p><strong>📍 Address</strong></p>
-<p>Johar Town, Lahore, Pakistan</p>
 
-<br>
+            <!-- CONTACT FORM -->
 
-<p><strong>📞 Phone</strong></p>
-<p>0310-4468648</p>
+            <div>
 
-<br>
+                <h2>
+                    Send Us a Message
+                </h2>
 
-<p><strong>📧 Email</strong></p>
-<p>info@spicehouse.pk</p>
 
-<br>
+                <form
+                    id="contactForm"
+                >
 
-<p><strong>🕒 Opening Hours</strong></p>
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Your Name"
+                        required
+                    >
 
-<p>
-Monday - Thursday<br>
-12:00 PM – 10:00 PM
-</p>
 
-<p>
-Friday - Sunday<br>
-12:00 PM – 11:30 PM
-</p>
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Your Email"
+                        required
+                    >
 
-</div>
 
-</div>
+                    <input
+                        type="tel"
+                        id="contactPhone"
+                        placeholder="Phone Number"
+                    >
 
-<div style="margin-top:60px;">
 
-<iframe
-src="https://www.google.com/maps?q=Gulberg%20Lahore&output=embed"
-width="100%"
-height="350"
-style="border:0;border-radius:10px;"
-loading="lazy">
-</iframe>
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Subject"
+                    >
 
-</div>
 
-</section>
+                    <textarea
+                        id="contactMessage"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
 
-<section class="cta-strip">
 
-<div class="container">
+                    <button
+                        type="submit"
+                        class="btn-cta"
+                    >
+                        Send Message
+                    </button>
 
-<h2>We Can't Wait to Serve You!</h2>
+                </form>
 
-<p style="margin-bottom:25px;">
-Book your table today and enjoy authentic Pakistani cuisine.
-</p>
+            </div>
 
-<a href="menu.html" class="btn-cta btn-outline">
-View Our Menu
-</a>
 
-</div>
 
-</section>
+            <!-- RESTAURANT INFO -->
 
-<footer class="site-footer">
+            <div>
 
-<div class="container footer-wrap">
+                <h2>
+                    Restaurant Info
+                </h2>
 
-<div>
 
-<h4>Spice House</h4>
+                <p>
+                    <strong>📍 Address</strong>
+                </p>
 
-<p>Johar Town, Lahore</p>
+                <p>
+                    Johar Town, Lahore, Pakistan
+                </p>
 
-</div>
 
-<div>
+                <br>
 
-<h4>Contact</h4>
 
-<p>0310-4468648</p>
+                <p>
+                    <strong>📞 Phone</strong>
+                </p>
 
-<p>info@spicehouse.pk</p>
+                <p>
+                    0310-4468648
+                </p>
 
-</div>
 
-<div>
+                <br>
 
-<h4>Follow Us</h4>
 
-<p>
-Facebook<br>
-Instagram<br>
-TikTok
-</p>
+                <p>
+                    <strong>📧 Email</strong>
+                </p>
 
-</div>
+                <p>
+                    info@spicehouse.pk
+                </p>
 
-</div>
 
-<p class="copyright">
+                <br>
 
-© 2026 Spice House. All Rights Reserved.
 
-</p>
+                <p>
+                    <strong>🕒 Opening Hours</strong>
+                </p>
 
-</footer>
 
-<script src="script.js"></script>
+                <p>
+                    Monday - Thursday<br>
+                    12:00 PM – 10:00 PM
+                </p>
+
+
+                <p>
+                    Friday - Sunday<br>
+                    12:00 PM – 11:30 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MAP -->
+
+        <div style="margin-top:60px;">
+
+            <iframe
+                src="https://www.google.com/maps?q=Gulberg%20Lahore&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;border-radius:10px;"
+                loading="lazy"
+            >
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta-strip">
+
+        <div class="container">
+
+            <h2>
+                We Can't Wait to Serve You!
+            </h2>
+
+            <p style="margin-bottom:25px;">
+
+                Book your table today and enjoy
+                authentic Pakistani cuisine.
+
+            </p>
+
+
+            <a
+                href="menu.html"
+                class="btn-cta btn-outline"
+            >
+                View Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-wrap">
+
+
+            <div>
+
+                <h4>
+                    Spice House
+                </h4>
+
+                <p>
+                    Johar Town, Lahore
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    0310-4468648
+                </p>
+
+                <p>
+                    info@spicehouse.pk
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Follow Us
+                </h4>
+
+                <p>
+                    Facebook<br>
+                    Instagram<br>
+                    TikTok
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 Spice House. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
 
 </body>
 

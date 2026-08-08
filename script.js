@@ -26,31 +26,117 @@ window.addEventListener("scroll", () => {
     }
 });
 
+js
 // =============================
 // Contact Form
 // =============================
 
-const contactForm = document.querySelector(".contact-box form");
+const contactForm =
+    document.getElementById("contactForm");
+
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener(
+        "submit",
+        async function (e) {
 
-        e.preventDefault();
+            e.preventDefault();
 
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
 
-        if (name === "" || email === "") {
-            alert("Please fill all required fields.");
-            return;
+            const contactData = {
+
+                name:
+                    document.getElementById(
+                        "contactName"
+                    ).value,
+
+                email:
+                    document.getElementById(
+                        "contactEmail"
+                    ).value,
+
+                phone:
+                    document.getElementById(
+                        "contactPhone"
+                    ).value,
+
+                subject:
+                    document.getElementById(
+                        "contactSubject"
+                    ).value,
+
+                message:
+                    document.getElementById(
+                        "contactMessage"
+                    ).value
+
+            };
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        "https://spice-house-backend.onrender.com/api/contact",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            body:
+                                JSON.stringify(
+                                    contactData
+                                )
+                        }
+                    );
+
+
+                const data =
+                    await response.json();
+
+
+                if (
+                    response.ok &&
+                    data.success
+                ) {
+
+                    alert(
+                        "✅ Message sent successfully!"
+                    );
+
+                    contactForm.reset();
+
+                } else {
+
+                    alert(
+                        "❌ Message could not be sent."
+                    );
+
+                    console.log(data);
+
+                }
+
+
+            } catch (error) {
+
+                console.error(
+                    "Contact Error:",
+                    error
+                );
+
+                alert(
+                    "❌ Cannot connect to server."
+                );
+
+            }
+
         }
+    );
 
-        alert("Thank you for contacting Spice House!");
-
-        contactForm.reset();
-
-    });
 }
 
 // =============================
