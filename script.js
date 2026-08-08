@@ -1,7 +1,7 @@
+```js
 // =============================
 // Spice House JavaScript
 // =============================
-
 
 // Active Navigation
 const navLinks = document.querySelectorAll(".nav-links a");
@@ -11,7 +11,6 @@ navLinks.forEach(link => {
         link.classList.add("active");
     }
 });
-
 
 // Sticky Header Shadow
 window.addEventListener("scroll", () => {
@@ -25,9 +24,7 @@ window.addEventListener("scroll", () => {
     } else {
         header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.08)";
     }
-
 });
-
 
 // =============================
 // Contact Form
@@ -54,9 +51,7 @@ if (contactForm) {
         contactForm.reset();
 
     });
-
 }
-
 
 // =============================
 // Reservation Form
@@ -78,7 +73,6 @@ if (reservationForm) {
         const guests = document.getElementById("reservationGuests").value;
         const message = document.getElementById("reservationMessage").value;
 
-
         const reservationData = {
             name,
             email,
@@ -89,11 +83,10 @@ if (reservationForm) {
             message
         };
 
-
         try {
 
             const response = await fetch(
-                "http://spice-house-backend.onrender.com/api/reservations",
+                "https://spice-house-backend.onrender.com/api/reservations",
                 {
                     method: "POST",
 
@@ -105,9 +98,7 @@ if (reservationForm) {
                 }
             );
 
-
             const data = await response.json();
-
 
             if (data.success) {
 
@@ -121,7 +112,6 @@ if (reservationForm) {
 
             }
 
-
         } catch (error) {
 
             console.error("Reservation Error:", error);
@@ -133,9 +123,7 @@ if (reservationForm) {
         }
 
     });
-
 }
-
 
 // =============================
 // Fade Animation
@@ -154,3 +142,4 @@ cards.forEach(card => {
     });
 
 });
+```
