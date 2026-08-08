@@ -142,4 +142,3 @@ cards.forEach(card => {
     });
 
 });
-```
