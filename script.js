@@ -93,7 +93,7 @@ if (reservationForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/reservations",
+                "http://spice-house-backend.onrender.com/api/reservations",
                 {
                     method: "POST",
 
