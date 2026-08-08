@@ -644,3 +644,72 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===========================
+RESERVATION
+=========================== */
+
+.reservation-section {
+background: #111111;
+padding: 90px 20px;
+}
+
+.reservation-intro {
+max-width: 700px;
+margin: 0 auto 40px;
+text-align: center;
+color: #D6D6D6;
+font-size: 18px;
+}
+
+.reservation-form {
+max-width: 750px;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 18px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+width: 100%;
+padding: 15px;
+border: 1px solid var(--gold);
+background: #1A1A1A;
+color: white;
+border-radius: 8px;
+font-size: 16px;
+font-family: inherit;
+outline: none;
+}
+
+.reservation-form textarea {
+grid-column: 1 / -1;
+resize: vertical;
+}
+
+.reservation-form input:focus,
+.reservation-form textarea:focus {
+border-color: white;
+}
+
+.reservation-form button {
+grid-column: 1 / -1;
+border: none;
+cursor: pointer;
+justify-self: center;
+}
+
+@media (max-width: 600px) {
+
+
+.reservation-form {
+    grid-template-columns: 1fr;
+}
+
+.reservation-form textarea,
+.reservation-form button {
+    grid-column: auto;
+}
+
+
+}
