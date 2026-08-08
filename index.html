@@ -1,182 +1,256 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice House</title>
 
-<title>Spice House</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-```
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ===========================
-     HEADER
-=========================== -->
+    <!-- ===========================
+         HEADER
+    ============================ -->
 
-<header class="site-header">
+    <header class="site-header">
 
-```
-<div class="container nav-wrap">
+        <div class="container nav-wrap">
 
-    <div class="logo">
-        Spice House
-    </div>
+            <div class="logo">
+                Spice House
+            </div>
 
-    <nav class="nav-links">
+            <nav class="nav-links">
 
-        <a href="index.html" class="active">Home</a>
+                <a href="index.html" class="active">Home</a>
 
-        <a href="about.html">About</a>
+                <a href="about.html">About</a>
 
-        <a href="menu.html">Menu</a>
+                <a href="menu.html">Menu</a>
 
-        <a href="gallery.html">Gallery</a>
+                <a href="gallery.html">Gallery</a>
 
-        <a href="contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
 
-    </nav>
+            </nav>
 
-</div>
-```
+        </div>
 
-</header>
-
-<!-- ===========================
-     HERO
-=========================== -->
-
-<section class="hero">
-
-```
-<div class="hero-content">
-
-    <h1>Experience Luxury Taste</h1>
-
-    <p>
-        Delicious food, premium atmosphere and unforgettable dining experience.
-    </p>
-
-    <a href="menu.html" class="btn-cta">
-        Explore Menu
-    </a>
-
-</div>
-```
-
-</section>
-
-<!-- ===========================
-     RESERVATION
-=========================== -->
-
-<section class="reservation-section">
-
-```
-<div class="container">
-
-    <h2>Reserve Your Table Today</h2>
-
-    <p class="reservation-intro">
-        Come and enjoy our special dishes with your family and friends.
-        Book your table now and let us make your dining experience special.
-    </p>
+    </header>
 
 
-    <form id="reservationForm" class="reservation-form">
+    <!-- ===========================
+         HERO
+    ============================ -->
 
-        <input
-            type="text"
-            id="reservationName"
-            placeholder="Your Name"
-            required
-        >
+    <section class="hero">
 
-        <input
-            type="email"
-            id="reservationEmail"
-            placeholder="Your Email"
-            required
-        >
+        <div class="container hero-content">
 
-        <input
-            type="tel"
-            id="reservationPhone"
-            placeholder="Phone Number"
-            required
-        >
+            <h1>Experience Luxury Taste</h1>
 
-        <input
-            type="date"
-            id="reservationDate"
-            required
-        >
+            <p>
+                Delicious food, premium atmosphere and
+                unforgettable dining experience.
+            </p>
 
-        <input
-            type="time"
-            id="reservationTime"
-            required
-        >
+            <a href="menu.html" class="btn-cta">
+                Explore Menu
+            </a>
 
-        <input
-            type="number"
-            id="reservationGuests"
-            placeholder="Number of Guests"
-            min="1"
-            max="20"
-            required
-        >
+        </div>
 
-        <textarea
-            id="reservationMessage"
-            rows="5"
-            placeholder="Special Request (Optional)"
-        ></textarea>
+    </section>
 
-        <button type="submit" class="btn-cta">
-            Reserve Table
-        </button>
 
-    </form>
+    <!-- ===========================
+         HIGHLIGHTS
+    ============================ -->
 
-</div>
-```
+    <section class="highlights">
 
-</section>
+        <div class="container">
 
-<!-- ===========================
-     CTA
-=========================== -->
+            <h2>Why Choose Spice House?</h2>
 
-<section class="cta-strip">
+            <div class="highlight-grid">
 
-```
-<h2>Reserve Your Table Today</h2>
+                <div class="highlight-card">
 
-<p>
-    Come and enjoy our special dishes with your family and friends.
-</p>
+                    <h3>Fresh Ingredients</h3>
 
-<a href="contact.html" class="btn-cta">
-    Contact Us
-</a>
-```
+                    <p>
+                        We use fresh and quality ingredients
+                        to prepare every dish.
+                    </p>
 
-</section>
+                </div>
 
-<!-- JavaScript -->
 
-<script src="script.js"></script>
+                <div class="highlight-card">
+
+                    <h3>Premium Taste</h3>
+
+                    <p>
+                        Enjoy delicious flavors prepared
+                        by our experienced chefs.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <h3>Luxury Atmosphere</h3>
+
+                    <p>
+                        Relax and enjoy your meal in a
+                        comfortable dining environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         RESERVATION
+    ============================ -->
+
+    <section class="reservation-section" id="reservation">
+
+        <div class="container">
+
+            <h2>Reserve Your Table Today</h2>
+
+            <p class="reservation-intro">
+                Come and enjoy our special dishes with your
+                family and friends. Book your table now and
+                let us make your dining experience special.
+            </p>
+
+
+            <form id="reservationForm" class="reservation-form">
+
+                <input
+                    type="text"
+                    id="reservationName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="reservationEmail"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="reservationPhone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="reservationDate"
+                    required
+                >
+
+                <input
+                    type="time"
+                    id="reservationTime"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="reservationGuests"
+                    placeholder="Number of Guests"
+                    min="1"
+                    max="20"
+                    required
+                >
+
+                <textarea
+                    id="reservationMessage"
+                    rows="5"
+                    placeholder="Special Request (Optional)"
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn-cta">
+                    Reserve Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         CTA
+    ============================ -->
+
+    <section class="cta-strip">
+
+        <div class="container">
+
+            <h2>Visit Spice House</h2>
+
+            <p>
+                Experience great food, beautiful atmosphere
+                and unforgettable moments.
+            </p>
+
+            <a href="contact.html" class="btn-cta">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         FOOTER
+    ============================ -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Spice House. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
 </html>
+```

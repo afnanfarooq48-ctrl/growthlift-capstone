@@ -141,4 +141,4 @@ cards.forEach(card => {
         card.style.transform = "translateY(0)";
     });
 
-});
+}); 
